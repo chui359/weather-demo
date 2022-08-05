@@ -10,8 +10,12 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  mounted() {
+    console.log(process.env.VUE_APP_WEATHER_KEY)
+    },
 }
+
 </script>
 
 <style>
